@@ -21,10 +21,6 @@ This is a Solidity smart contract for creating and managing Non-Fungible Tokens 
 
 - Constructor function to initialize the contract. It sets the owner of the contract and mints initial NFTs with unique token IDs. The contract name is set as "MyNFT" and the symbol as "MNFTT".
 
-### `modifier ownerAllowed()`
-
-- A modifier that restricts access to certain functions to the owner of the contract. It requires that the caller of the function must be the owner.
-
 ### `function mint(uint256 quantity) external payable ownerAllowed()`
 
 - Allows the owner to mint new NFTs with a specified quantity. The `quantity` parameter determines how many NFTs will be minted in a single transaction. The function checks that the total supply of NFTs does not exceed the maximum limit of 100 and restricts the quantity to be minted to a maximum of 5 in a single transaction.
