@@ -15,6 +15,7 @@ async function main() {
 
   // Get the signer instance
   const [signer] = await ethers.getSigners();
+  
 
   // Get ERC721 contract instance of MyNFT
   const NFT = await ethers.getContractFactory("MyNFT");
